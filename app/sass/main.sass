@@ -65,6 +65,12 @@ body
 .container
 	padding-bottom: 20px
 	box-shadow: rgba($text2, .2) 0 2px 4px 0
+
+
+	//////////////////////// шапка
+
+
+
 .s-header
 	&__firstline
 		display: flex
@@ -185,5 +191,67 @@ body
 						text-transform: uppercase
  
 
+
+ /////// секция продукта
+
+.breadcrumbs
+	display: block
+	width: 1600px
+	margin: 0 auto
+	padding-top: 50px
+	padding-bottom: 60px
+	ul
+		padding: 0
+		li
+			list-style: none
+			a
+				text-decoration: none
+				font-size: 13px
+				line-height: 18px
+				font-weight: 400
+				Font-family: $default-font
+			.fa-angle-right
+				font-size: 10px
+				margin-left: 17px
+				margin-right: 17px
+.s-product
+	background-color: #F9F9F9
+	padding-top: 62px
+	padding-bottom: 62px
+	display: block
+	width: 1600px
+	margin: 0 auto
+	&__gallery
+		width: 50%
+		display: flex
+		.slider
+			width: 100px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			margin-left: 92px
+			margin-right: 108px
+			.fa-angle-down
+				font-size: 28px
+				color: $text3
+				cursor: pointer
+			.thumb
+				display: flex
+				width: 100%
+				height: 108px
+				margin-bottom: 40px
+				padding: 5px
+				a
+					img
+						width: 100%
+						height: 100%
+
+		.select-foto
+			img
+				width: 280px
+				background-size: cover
+				background-position: center center 
+				background-repeat: no-repeat				
 
 @import "media" // Всегда в конце
