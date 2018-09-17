@@ -62,7 +62,7 @@ body
 	background-color: $accent1
 	color: #fff
 
-.container
+.shadow
 	padding-bottom: 20px
 	box-shadow: rgba($text2, .2) 0 2px 4px 0
 
@@ -218,10 +218,10 @@ body
 	background-color: #F9F9F9
 	padding-top: 62px
 	padding-bottom: 62px
-	display: block
+	display: flex
 	width: 1600px
 	margin: 0 auto
-	&__gallery
+	&__gallery, 
 		width: 50%
 		display: flex
 		.slider
@@ -253,5 +253,6 @@ body
 				background-size: cover
 				background-position: center center 
 				background-repeat: no-repeat				
-
+	&__conditions
+		width: 50%
 @import "media" // Всегда в конце
