@@ -189,11 +189,23 @@ body
 						margin: 20px
 						padding: 15px
 						text-transform: uppercase
- 
+						&:before, &:after
+							content: '' 
+							position: absolute
+							right: 0
+							bottom: 0
+							left: 0
+							transition: 0.2s 
+							color: rgba($accent1, .9)
+							border-bottom: 3px solid $accent1
+							transform: scaleX(0)
+						&:hover 
+							&:before, &:after
+								transform: scaleX(1)
 
 
  /////// секция продукта
-
+	
 .breadcrumbs
 	display: block
 	width: 1600px
@@ -205,22 +217,27 @@ body
 		li
 			list-style: none
 			a
+				color: $text1
 				text-decoration: none
 				font-size: 13px
 				line-height: 18px
 				font-weight: 400
 				Font-family: $default-font
 			.fa-angle-right
-				font-size: 10px
+				color: $text1
+				font-size: 13px
 				margin-left: 17px
 				margin-right: 17px
 .s-product
 	background-color: #F9F9F9
 	padding-top: 62px
 	padding-bottom: 62px
+	padding-left: 92px
+	padding-right: 160px
 	display: flex
 	width: 1600px
 	margin: 0 auto
+	margin-bottom: 60px
 	&__gallery, 
 		width: 50%
 		display: flex
@@ -230,7 +247,6 @@ body
 			flex-direction: column
 			justify-content: center
 			align-items: center
-			margin-left: 92px
 			margin-right: 108px
 			.fa-angle-down
 				font-size: 28px
@@ -255,4 +271,184 @@ body
 				background-repeat: no-repeat				
 	&__conditions
 		width: 50%
+		&__code
+			h1
+				padding: 0
+				margin: 0
+				color: $text1
+				font-size: 30px
+				line-height: 40px
+				font-weight: 600
+				Font-family: $default-font		
+				text-transform: uppercase		
+			p
+				color: $text3
+				font-size: 16px
+				line-height: 50px
+				font-weight: 400
+				Font-family: $default-font	
+				margin-bottom: 40px				
+				strong
+					color: $text2
+					font-size: 16px
+					line-height: 20px
+					Font-family: $default-font						
+		&__description
+			display: flex
+			padding-bottom: 160px
+			.block-price, .block-TTH,
+				width: 50%
+			.block-price	
+				.btn-favorites
+					margin: 0
+					padding: 0
+					line-height: 36px
+					text-decoration: none
+					display: flex
+					align-items: center
+					justify-content: center
+					width: 150px
+					border: 3px solid $accent1
+					border-radius: 50px 
+					color: $accent1
+					font-size: 14px
+					font-weight: 600
+					Font-family: $default-font		
+					transition: .3s	
+					margin-bottom: 40px	
+					img
+						padding-right: 10px
+					&:hover
+						transform: scale(.97)
+				.price
+					display: block	
+					font-size: 40px
+					font-weight: 700
+					Font-family: $default-font		
+					margin-bottom: 20px
+				.available
+					font-size: 16px
+					font-weight: 600
+					Font-family: $default-font	
+					margin-bottom: 40px	
+					margin-top: 0
+				.btn-busket
+					margin: 0
+					padding: 0
+					line-height: 60px
+					text-decoration: none
+					display: flex
+					align-items: center
+					justify-content: center
+					width: 250px
+					background-color: $accent2
+					border-radius: 50px 
+					color: #fff
+					font-size: 24px
+					font-weight: 600
+					Font-family: $default-font		
+					transition: .3s	
+					img
+						padding-left: 10px
+					&:hover
+						transform: scale(.97)
+			.block-TTH
+				.btn-feedback
+					margin: 0
+					padding: 0
+					line-height: 36px
+					text-decoration: none
+					display: flex
+					align-items: center
+					width: 160px
+					font-size: 16px
+					font-weight: 400
+					Font-family: $default-font		
+					transition: .3s	
+					margin-bottom: 84px
+					img
+						margin-right: 10px
+				.main-characteristics, .characteristics,
+					p
+						margin: 0
+						margin-bottom: 32px
+						padding: 0
+						font-size: 16px
+						font-weight: 600
+						Font-family: $default-font		
+				.characteristics
+					p
+						margin: 0
+					span
+						font-weight: 400
+						color: $text3
+		&__future
+			display: flex
+			.item-future
+				width: 33.3333333333%
+				.item-main
+					display: flex
+					align-items: center
+					font-size: 18px
+					font-weight: 600
+					Font-family: $default-font	
+					margin-bottom: 16px
+					img
+						margin-left: 10px	
+				p
+					margin: 0
+					padding: 0
+					color: $text2
+					font-size: 16px
+					font-weight: 400
+					Font-family: $default-font	
+
+
+////////////////     ОТЗЫВЫ //////////////////
+.nav-feedback
+	width: 1600px
+	margin: 0 auto
+	ul
+		margin-top: 90px
+		padding: 0
+		display: flex
+		li
+			position: relative
+			display: block
+			list-style: none
+			height: 40px
+			a
+				padding: 23px 30px
+				background-color: #F7F8FC
+				color: $text1
+				text-decoration: none
+				font-size: 24px
+				font-weight: 600
+				Font-family: $default-font	
+			&:after
+				position: absolute
+				display: block
+				content: ''
+				right: -3px
+				top: 0
+				bottom: 0
+				border-right: 3px solid $text3
+				z-index: 12
+			&:last-child
+				&:after
+					display: none
+			.active
+				color: $accent1
+.s-feedback
+	background-color: #F7F8FC
+	display: flex
+	width: 1600px
+	margin: 0 auto
+	padding-top: 82px
+	padding-bottom: 67px
+	padding-left: 92px 
+
+
+
+
 @import "media" // Всегда в конце

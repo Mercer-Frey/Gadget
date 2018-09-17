@@ -23,5 +23,8 @@
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
     "vinyl-ftp": "^0.6.1"
+  },
+  "dependencies": {
+    "bower-sync": "^0.1.1"
   }
 }
