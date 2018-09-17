@@ -35,10 +35,15 @@ body textarea:required:valid
 	color: #666
 
 html, body
-	height: 100%
-
+	--def: #96B7C4
+	--inv: #fff
+	height: 100% 
+	margin: 0
+	padding: 0
+	font-size: 10px
+	background-color: #fff
 body
-	font-size: 16px
+	font-size: 10px
 	min-width: 320px
 	position: relative
 	line-height: 1.65
@@ -54,7 +59,131 @@ body
 	text-align: center
 
 ::selection
-	background-color: $accent
+	background-color: $accent1
 	color: #fff
+
+.container
+	padding-bottom: 20px
+	box-shadow: rgba($text2, .2) 0 2px 4px 0
+.s-header
+	&__firstline
+		display: flex
+		justify-content: space-between
+		z-inbdex: 1
+		margin: 0 auto
+		max-width: 1600px
+		padding-top: 35px
+		ul
+			margin: 0
+			padding: 0
+			display: flex
+			justify-content: start	
+			align-items: center		
+			li
+				position: relative
+				list-style: none
+				a
+					margin-right: 30px
+					position: relative
+					display: block
+					text-decoration: none
+					color: $text1
+					Font-family: $default-font
+					Font-weight: 400 
+					Font-size: 13px 
+					Line-height: 18px  
+					Letter-spacing: 2%
+					box-sizing: border-box
+					transition: .5s	
+					padding-top: 15px
+					padding-bottom: 15px						
+					&:before, &:after
+						content: ''
+						position: absolute
+						right: 0
+						bottom: 0
+						left: 0
+						transition: 0.2s
+						color: rgba($accent1, .9)
+						border-bottom: 2px solid $accent1
+						transform: scaleX(0)
+					&:hover 
+						color: rgba($accent1, .9)
+						&:before, &:after
+							transform: scaleX(1)
+		&__info
+			display: flex
+			justify-content: end
+			align-items: center
+			.number
+				font-size: 20px
+				font-weight: bold
+				Font-family: $default-font
+				.fa-angle-down
+					margin-left: 20px
+					margin-right: 40px
+					cursor: pointer
+			.soc
+				.fa-instagram, .fa-facebook-square,
+					font-size: 24px
+					color: $text1
+					margin-left: 20px
+					transition: .3s
+					&:hover
+						color: #333
+						transform: scale(1.1)
+	&__secondline
+		display: flex
+		justify-content: space-between
+		z-inbdex: 1
+		margin: 0 auto
+		max-width: 1600px
+		padding-top: 30px
+		padding-bottom: 30px
+		.logo
+		.personal-data
+			display: flex
+			justify-content: flex-end
+			.data
+				display: flex
+				justify-content: center
+				align-items: center
+				padding: 0 18px
+				border: 1px solid #E4E4E4
+				cursor: pointer
+				img
+					width: 21px
+					margin-right: 20px
+				
+				p
+					width: 85px
+					font-size: 12px
+					line-height: 16px
+					font-weight: 400
+					Font-family: $default-font
+	&__thirtline
+		.store
+			ul
+				display: flex
+				justify-content: center
+				li
+					position: relative
+					list-style: none
+					a
+						position: relative
+						text-decoration: none
+						color: $text1
+						Font-family: $default-font
+						Font-weight: 600 
+						Font-size: 15px 
+						Line-height: 18px  
+						Letter-spacing: 2%
+						box-sizing: border-box
+						transition: .5s	
+						margin: 20px
+						padding: 15px
+						text-transform: uppercase
+ 
+
 
 @import "media" // Всегда в конце

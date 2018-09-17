@@ -1,12 +1,11 @@
 {
-  "name": "optimizedhtml",
-  "version": "3.0.0",
-  "description": "OptimizedHTML - Start HTML Template",
+  "name": "Gadget",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "WebDesign Master",
+  "author": "Mercer Frey",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.24.7",
