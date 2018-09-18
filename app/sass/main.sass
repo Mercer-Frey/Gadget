@@ -57,7 +57,9 @@ body
 
 .text-center
 	text-align: center
-
+.flex-center
+	display: flex
+	justify-content: center
 ::selection
 	background-color: $accent1
 	color: #fff
@@ -425,6 +427,8 @@ body
 				font-size: 24px
 				font-weight: 600
 				Font-family: $default-font	
+				&:hover
+					color: $accent1
 			&:after
 				position: absolute
 				display: block
@@ -447,6 +451,248 @@ body
 	padding-top: 82px
 	padding-bottom: 67px
 	padding-left: 92px 
+	margin-bottom: 80px
+	&__block
+		width: 50%
+		padding-right: 154px	
+		.sayAbout
+			margin: 0
+			padding: 0
+			font-size: 18px
+			line-height: 18px
+			font-weight: 600
+			Font-family: $default-font
+			margin-bottom: 30px			
+		textarea
+			resize: none
+			width: 600px
+			border: 1px solid $text3
+			padding: 11px 20px
+			font-size: 17px
+			line-height: 20px
+			font-weight: 400
+			Font-family: $default-font
+			color: $text3
+			background-color: transparent
+			margin-bottom: 20px
+		.flex
+			display: flex
+			justify-content: flex-end
+			.btn-send
+				padding: 0
+				line-height: 36px
+				text-decoration: none
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 150px
+				border: 3px solid $accent1
+				border-radius: 50px 
+				color: $accent1
+				font-size: 14px
+				font-weight: 600
+				Font-family: $default-font		
+				transition: .3s	
+				margin-bottom: 70px
+				&:hover
+					transform: scale(.97)
+		&__named-comment
+			.all
+				margin: 0
+				padding: 0
+				font-size: 24px
+				line-height: 24px
+				font-weight: 600
+				Font-family: $default-font
+				margin-left: -20px
+			.item-feedback
+				p
+					margin: 0
+					padding: 0
+				.flex-container
+					display: flex
+					justify-content: space-between
+					margin-bottom: 20px	
+					margin-top: 50px					
+					.nameSay
+						font-size: 18px
+						line-height: 18px
+						font-weight: 600
+						Font-family: $default-font	
+					.data-feedback
+						font-size: 18px
+						line-height: 18px
+						font-weight: 600
+						Font-family: $default-font
+						color: $text3				
+						margin-right: -20px
+				.comment
+						font-size: 17px
+						line-height: 25px
+						font-weight: 400
+						Font-family: $default-font
+						color: $text2			
+		&__btn-read
+			.btn-read
+				padding: 0
+				line-height: 50px
+				text-decoration: none
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 250px
+				border: 3px solid $accent1
+				color: $accent1
+				font-size: 14px
+				font-weight: 600
+				Font-family: $default-font		
+				transition: .3s	
+				margin-top: 50px
+				&:hover
+					border: 3px solid transparent
+					background-color: $accent1
+					color: #fff
+	&__authorization
+		display: flex
+		width: 50%
+		height: 50%
+		justify-content: center
+		align-items: center
+		.flex-center
+			width: 270px
+			flex-direction: column
+			align-items: center
+			.btn-login
+				line-height: 60px
+				text-decoration: none
+				width: 250px
+				border-radius: 50px
+				background-color: $accent1
+				font-size: 24px
+				font-weight: 600
+				Font-family: $default-font		
+				transition: .3s	
+				color: #fff
+				margin-top: 50px
+				box-shadow: rgba($text2, .2) 0 10px 10px 0
+				&:hover
+					transform: scale(.97)
+			p
+				font-size: 13px
+				font-weight: 400
+				Font-family: $default-font	
+
+
+
+
+
+/////////////////////////// КАРУСЕЛЬ ///////////////////
+
+.s-mbSearch
+	width: 1277px
+	margin: 0 auto
+	margin-bottom: 140px	
+	.offers
+		.mb
+			font-size: 30px
+			line-height: 30px
+			font-weight: 600
+			Font-family: $default-font		
+			text-transform: uppercase
+			padding: 0
+			margin-bottom: 40px
+	.owl-carousel
+		width: 100%
+		position: relative
+		.owl-dots
+			position: absolute
+			bottom: -50px
+			width: 100%
+			text-align: center		
+			z-index: -1
+			.owl-dot 
+				width: 10px
+				height: 10px
+				background-color: $text3
+				border-radius: 10em
+				display: inline-block
+				margin-right: 20px
+				transition: background-color .25s ease, transform .25s ease
+				&:last-child
+					margin-right: 0
+				&.active
+					background-color: $text2
+					transform: scale(1.3)
+		.owl-nav
+			.owl-prev
+				position: absolute
+				top: 50%
+				left: -90px
+				font-size: 9em
+				color: $text3
+				transform: translate(0, -50%)
+				transition: .4
+				outline: none
+				&:hover
+					opacity: .8
+			.owl-next
+				position: absolute
+				top: 50%
+				right: -90px
+				font-size: 9em
+				color: $text3				
+				transform: translate(0, -50%)
+				transition: .2
+				outline: none
+				&:hover
+					opacity: .8
+	.carousel-offers
+		display: flex
+		justify-content: center
+		.item-offer
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-direction: column
+			width: 240px
+			height: 280px
+			background-color: #F7F8FC
+			margin-right: 25px
+			padding: 10px
+			img
+				height: 140px
+				width: 80px
+				margin-bottom: 15px
+			&:last-child
+				margin-right: 0
+			p
+				font-size: 14px
+				line-height: 20px
+				font-weight: 400
+				Font-family: $default-font		
+			b
+				font-size: 18px
+				line-height: 20px
+				font-weight: 600
+				Font-family: $default-font		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

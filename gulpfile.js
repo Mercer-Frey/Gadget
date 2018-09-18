@@ -40,6 +40,7 @@ gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/fontawesome-pro-5.0.8/svg-with-js/js/fontawesome-all.min.js',
+		'app/libs/OwlCarousel2-2.3.4/owl.carousel.min.js',		
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
