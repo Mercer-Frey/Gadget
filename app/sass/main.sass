@@ -768,11 +768,40 @@ body
 					list-style: none
 					a
 						color: #fff
+						position: relative
 						font-size: 16px
 						line-height: 36px
 						font-weight: 400
 						Font-family: $default-font	
-						text-decoration: none
+						text-decoration: none						
+						&:after
+							transition: .3s
+							transform: scaleX(0)
+							position: absolute
+							content: ''
+							bottom: -5px
+							right: -7px
+							width: 35px
+							height: 15px
+							border-bottom: 1px solid #fff
+							transform-origin: right
+						&:before
+							transition: .3s
+							transform: scaleY(0)
+							position: absolute
+							content: ''
+							bottom: -5px
+							right: -7px
+							width: 35px
+							height: 15px
+							border-right: 1px solid #fff
+							transform-origin: bottom							
+						&:hover
+							&:after
+								transform: scaleX(1)
+						&:hover
+							&:before
+								transform: scaleY(1)		
 	&__block-contacts
 		width: 50%
 		height: 286.97px
