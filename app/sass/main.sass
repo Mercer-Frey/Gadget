@@ -137,9 +137,7 @@ body
 					color: $text1
 					margin-left: 20px
 					transition: .3s
-					&:hover
-						color: #333
-						transform: scale(1.1)
+
 	&__secondline
 		display: flex
 		justify-content: space-between
@@ -678,16 +676,146 @@ body
 
 
 
+/////////////////////   ДОСТАВКА     ////////////////////
+
+
+.s-delivery
+	padding-top: 50px
+	padding-bottom: 50px
+	background-color: #F9F9F9
+	&__container
+		width: 1277px
+		margin: 0 auto
+		display: flex
+		justify-content: center
+		align-items: center
+	&__main
+		width: 280px
+		height: 280px
+		background-image: linear-gradient(148deg, #4377ec, #062294);
+		padding: 31px
+		&__car
+			display: flex
+			img
+				height: 21px
+				margin-right: 20px
+			p
+				margin: 0
+				padding: 0
+				font-size: 24px
+				line-height: 24px
+				font-weight: 400
+				Font-family: $default-font		
+				color: #fff
+				margin-bottom: 40px
+		p
+			font-size: 16px
+			line-height: 24px
+			font-weight: 400
+			Font-family: $default-font		
+			color: #fff			
+	&__attachment
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		width: 250px
+		height: 250px
+		background-color: #fff
+		margin-right: 10px
+		&:last-child
+			margin-right: 0
+		p
+			font-size: 20px
+			line-height: 24px
+			font-weight: 400
+			Font-family: $default-font		
 
 
 
 
+///////////////////////////   ФУТЕР
 
 
 
-
-
-
+.s-footer
+	padding-top: 50px
+	padding-bottom: 50px
+	background-color: $accent1
+	&-blocks
+		width: 1277px
+		margin: 0 auto
+		display: flex
+		align-items: center
+	&__block-menu,
+		width: 50%
+		display: flex
+		.menu
+			width: 50%
+	&__block-menu
+		.what
+			color: #fff
+			font-size: 16px
+			line-height: 16px
+			font-weight: 600
+			Font-family: $default-font	
+			margin-bottom: 40px
+		.menu			
+			ul
+				margin: 0
+				padding: 0
+				li
+					list-style: none
+					a
+						color: #fff
+						font-size: 16px
+						line-height: 36px
+						font-weight: 400
+						Font-family: $default-font	
+						text-decoration: none
+	&__block-contacts
+		width: 50%
+		height: 286.97px
+		display: flex		
+		justify-content: flex-end
+		align-items: flex-start
+		text-align: right
+		.partnership
+			width: 50%
+			height: 100%
+			.toWhom
+				color: #fff
+				font-size: 16px
+				line-height: 16px
+				font-weight: 600
+				Font-family: $default-font	
+				margin-bottom: 40px				
+			.number
+				color: #fff
+				font-size: 24px
+				line-height: 24px
+				font-weight: 600
+				Font-family: $default-font	
+				margin-bottom: 40px				
+			.email
+				color: #fff
+				font-size: 18px
+				line-height: 18px
+				font-weight: 400
+				Font-family: $default-font	
+				margin-bottom: 40px		
+			.soc
+				margin-top: 80px
+				.fa-facebook-square, .fa-instagram,					
+					color: #fff
+					width: 24px
+					height: 24px
+					transition: .3s
+					&:hover
+						opacity: .8
+						transform: scale(1.1)					
+				.fa-facebook-square
+					margin-left: 20px
 
 
 
