@@ -25,6 +25,9 @@
     "vinyl-ftp": "^0.6.1"
   },
   "dependencies": {
-    "bower-sync": "^0.1.1"
+    "bower-sync": "^0.1.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-uglifyjs": "^0.6.2",
+    "imagemin-pngquant": "^6.0.0"
   }
 }

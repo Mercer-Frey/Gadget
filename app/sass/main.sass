@@ -242,33 +242,51 @@ body
 		width: 50%
 		display: flex
 		.slider
-			width: 100px
+			width: auto
 			display: flex
 			flex-direction: column
 			justify-content: center
 			align-items: center
-			margin-right: 108px
+			height: 540px	
 			.fa-angle-down
-				font-size: 28px
+				font-size: 50px
 				color: $text3
 				cursor: pointer
 			.thumb
+				justify-content: flex-start
+				flex-direction: column				
 				display: flex
 				width: 100%
-				height: 108px
 				margin-bottom: 40px
 				padding: 5px
-				a
-					img
+				li
+					list-style: none
+					height: 108px
+					margin-bottom: 10px
+					width: 100px
+					padding: 8px
+					owerflow: hidden
+					a
 						width: 100%
 						height: 100%
+						img
+							display: block
+							margin: 0 auto
+							width: auto
+							height: 100%
 
 		.select-foto
+			width: 100%
 			img
-				width: 280px
+				display: block
+				margin: 0 auto				
+				width: auto
+				height: 400px
 				background-size: cover
 				background-position: center center 
-				background-repeat: no-repeat				
+				background-repeat: no-repeat	
+
+
 	&__conditions
 		width: 50%
 		&__code
@@ -659,7 +677,8 @@ body
 			padding: 10px
 			img
 				height: 140px
-				width: 80px
+				display: block
+				width: auto
 				margin-bottom: 15px
 			&:last-child
 				margin-right: 0
